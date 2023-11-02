@@ -1,0 +1,95 @@
+.launchpad-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+   }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+#launch-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.launch-card {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    background-color: white;
+}
+/* Global styles that apply to all screen sizes */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Responsive layout */
+.content {
+    max-width: 100%; /* This will prevent content from overflowing the container */
+    margin: 0 auto; /* Center the content horizontally */
+
+    /* Mobile First Design (default styles for small screens) */
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+
+    /* Mobile View: Single column until 700px */
+    /* Tablet View: 2 columns between 700px and 1024px */
+    /* Desktop View: 4 columns between 1024px and 1440px */
+}
+
+/* Media Queries for Different Viewports */
+@media screen and (min-width: 700px) {
+    /* Tablet View: 2 columns between 700px and 1024px */
+    .content {
+        padding: 20px 40px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* Desktop View: 4 columns between 1024px and 1440px */
+    .content {
+        padding: 20px 60px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    /* Beyond 1440px viewport, the content is centered with a max width of 1440px */
+    .content {
+        max-width: 1440px;
+    }
+}
